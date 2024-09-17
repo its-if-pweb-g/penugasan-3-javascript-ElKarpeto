@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tugas 3 Biodata Diri</title>
+        <link
+            rel="icon"
+            href="assets/data-diri/foto-diri.jpg"
+            type="image/x-icon"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Comfortaa"
+        />
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body
+        style="
+            background-image: repeating-radial-gradient(
+                    circle at 0 0,
+                    transparent 0,
+                    #ffffff 100px
+                ),
+                repeating-linear-gradient(
+                    rgba(61, 61, 61, 0.04),
+                    rgba(61, 61, 61, 0.04)
+                );
+            background-color: #ffffff;
+        "
+    >
+        <header class="bg-white shadow-md font-[Ubuntu]">
+            <nav class="flex justify-between items-center w-[92%] mx-auto">
+                <div>
+                    <h1 class="m-4 block text-xl font-bold md:hidden">
+                        Sayyid Daffa Al Mubarok
+                    </h1>
+                </div>
+                <div
+                    class="nav-links md:static absolute duration-500 bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+                >
+                    <ul
+                        class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8"
+                    >
+                        <li class="md:my-4">
+                            <a
+                                class="pb-1 text-lg mx-4 duration-300 rounded-sm border-b-4 border-black border-opacity-0 bg-white hover:border-opacity-100"
+                                href="#deskripsi"
+                                >Tentang Saya</a
+                            >
+                        </li>
+                        <li class="md:my-4">
+                            <a
+                                class="pb-1 text-lg mx-4 duration-300 rounded-sm border-b-4 border-black border-opacity-0 bg-white hover:border-opacity-100"
+                                href="#pendidikan"
+                                >Pendidikan</a
+                            >
+                        </li>
+                        <li class="md:my-4">
+                            <a
+                                class="pb-1 text-lg mx-4 duration-300 rounded-sm border-b-4 border-black border-opacity-0 bg-white hover:border-opacity-100"
+                                href="#prestasi"
+                                >Prestasi</a
+                            >
+                        </li>
+                        <li class="md:my-4">
+                            <a
+                                class="pb-1 text-lg mx-4 duration-300 rounded-sm border-b-4 border-black border-opacity-0 bg-white hover:border-opacity-100"
+                                href="#hobi"
+                                >Hobi</a
+                            >
+                        </li>
+                        <li class="md:my-4">
+                            <a
+                                class="pb-1 text-lg mx-4 duration-300 rounded-sm border-b-4 border-black border-opacity-0 bg-white hover:border-opacity-100"
+                                href="#film"
+                                >Film Favorit</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon
+                        onclick="onToggleMenu(this)"
+                        name="menu"
+                        class="text-3xl cursor-pointer md:hidden"
+                    ></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <!-- deskripsi diri -->
+        <div id="deskripsi" class="mt-10">
+            <!-- foto diri -->
+            <h1
+                style="font-family: Ubuntu"
+                class="text-5xl md:text-6xl lg:text-7xl flex justify-center mt-10"
+            >
+                Tentang Saya
+            </h1>
+            <div class="flex justify-center mt-10 lg:container mx-auto">
+                <div class="m-4 hidden lg:block">
+                    <img
+                        src="assets/data-diri/foto-diri.jpg"
+                        alt="foto diri"
+                        loading="lazy"
+                        class="rounded-[50px] object-contain my-2 justify-center w-[1000px] duration-300 aspect-square"
+                    />
+                    <h1
+                        style="font-family: Ubuntu"
+                        class="mt-4 mb-2 text-2xl font-bold text-center"
+                    >
+                        Sayyid Daffa ' Al Mubarok
+                    </h1>
+                </div>
+                <!-- deskripsi diri -->
+                <div class="m-4 p-4 flex-col">
+                    <p
+                        style="font-family: Comfortaa"
+                        class="my-3 lg:my-9 text-xl lg:text-2xl"
+                    >
+                        Saya mahasiswa Teknik Informatika ITS angkatan 2023.
+                        Saya mahasiswa yang sangat berminat dibidang analisis
+                        data, sains data, matematika dan fisika. Saya sangat
+                        suka untuk mencari kegiatan yang dapat menunjang minat
+                        dan bakat saya dalam belajar.
+                    </p>
+                    <div class="m-5 flex justify-center">
+                        <a href="https://wa.me/6285156136144">
+                            <img
+                                src="assets/kontak/whatsapp.png"
+                                alt="logo"
+                                class="w-8 sm:w-12 aspect-square mx-2 md:mx-4 object-cover"
+                            />
+                        </a>
+                        <a href="https://github.com/ElKarpeto">
+                            <img
+                                src="assets/kontak/github.png"
+                                alt="logo"
+                                class="w-8 sm:w-12 aspect-square mx-2 md:mx-4 object-cover"
+                            />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/sayyiddaffaalmubarok/"
+                        >
+                            <img
+                                src="assets/kontak/linkedin.png"
+                                alt="logo"
+                                class="w-8 sm:w-12 aspect-square mx-2 md:mx-4 object-cover"
+                            />
+                        </a>
+                        <img
+                            src="assets/kontak/email.png"
+                            alt="logo"
+                            class="w-8 sm:w-12 aspect-square mx-2 md:mx-4 object-cover"
+                        />
+                        <a href="https://www.instagram.com/alllmubarok/">
+                            <img
+                                src="assets/kontak/instagrram.png"
+                                alt="logo"
+                                class="w-8 sm:w-12 aspect-square mx-2 md:mx-4 object-cover"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pendidikan -->
+        <div id="pendidikan" class="mx-5 mt-10 lg:container lg:mx-auto">
+            <h1
+                style="font-family: Ubuntu"
+                class="text-5xl md:text-6xl lg:text-7xl flex justify-center"
+            >
+                Pendidikan
+            </h1>
+            <div class="mt-5 grid lg:grid-cols-2 md:grid-col-1 gap-1">
+                <div
+                    id="kuliah"
+                    class="m-5 bg-white flex rounded-lg duration-300 hover:shadow-lg border-2 hover:shadow-gray-800 sm:h-[200px]"
+                >
+                    <div class="w-[150px] h-[120px]">
+                        <img
+                            src="assets/pendidikan/logo-kuliah.png"
+                            alt="kuliah"
+                            class="w-[120px] h-[120px] object-contain m-4"
+                        />
+                    </div>
+                    <div class="mx-4 my-6 items-center">
+                        <h2
+                            style="font-family: Ubuntu"
+                            class="text-2xl font-bold"
+                        >
+                            Institut Teknologi Sepuluh Nopember
+                        </h2>
+                        <p style="font-family: Comfortaa" class="my-5">
+                            <span class="text-xl">Surabaya, Jawa Timur</span>
+                            <br />
+                            <span class="text-gray-600">2023-Sekarang</span>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    id="sma"
+                    class="m-5 flex bg-white rounded-lg duration-300 hover:shadow-lg border-2 hover:shadow-gray-800 sm:h-[200px]"
+                >
+                    <div class="w-[150px] h-[120px]">
+                        <img
+                            src="assets/pendidikan/logo-sma.png"
+                            alt="kuliah"
+                            class="w-[120px] h-[120px] object-contain m-4"
+                        />
+                    </div>
+                    <div class="mx-4 my-6 items-center">
+                        <h2
+                            style="font-family: Ubuntu"
+                            class="text-2xl font-bold"
+                        >
+                            MAN 3 Palembang
+                        </h2>
+                        <p style="font-family: Comfortaa" class="my-5">
+                            <span class="text-xl"
+                                >Palembang, Sumatera Selatan</span
+                            >
+                            <br />
+                            <span class="text-gray-600">2020-2023</span>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    id="smp"
+                    class="m-5 flex bg-white rounded-lg duration-300 hover:shadow-lg border-2 hover:shadow-gray-800 sm:h-[200px]"
+                >
+                    <div class="w-[150px] h-[120px]">
+                        <img
+                            src="assets/pendidikan/logo-smp.png"
+                            alt="kuliah"
+                            class="w-[120px] h-[120px] object-contain m-4"
+                        />
+                    </div>
+                    <div class="mx-4 my-6 items-center">
+                        <h2
+                            style="font-family: Ubuntu"
+                            class="text-2xl font-bold"
+                        >
+                            SMPIT Ash Shiddiqqi
+                        </h2>
+                        <p style="font-family: Comfortaa" class="my-5">
+                            <span class="text-xl">Batanghari, Jambi</span>
+                            <br />
+                            <span class="text-gray-600">2017-2020</span>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    id="sd"
+                    class="m-5 flex bg-white rounded-lg duration-300 hover:shadow-lg border-2 hover:shadow-gray-800 sm:h-[200px]"
+                >
+                    <div class="w-[150px] h-[120px]">
+                        <img
+                            src="assets/pendidikan/logo-sd.png"
+                            alt="kuliah"
+                            class="w-[120px] h-[120px] object-contain m-4"
+                        />
+                    </div>
+                    <div class="mx-4 my-6 items-center">
+                        <h2
+                            style="font-family: Ubuntu"
+                            class="text-2xl font-bold"
+                        >
+                            SDIT Bina Insani
+                        </h2>
+                        <p style="font-family: Comfortaa" class="my-5">
+                            <span class="text-xl">Serang, Banten</span>
+                            <br />
+                            <span class="text-gray-600">2011-2017</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- prestasi -->
+        <div id="prestasi" class="mx-5 mt-10 lg:container lg:mx-auto">
+            <h1
+                style="font-family: Ubuntu"
+                class="text-5xl md:text-6xl lg:text-7xl flex justify-center"
+            >
+                Riwayat Prestasi
+            </h1>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-10">
+                <div
+                    class="flex bg-white items-center rounded-lg m-2 duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <img
+                        src="assets/prestasi/logo-osn.png"
+                        alt="logo"
+                        class="w-20 h-20 object-contain my-4 mx-2"
+                    />
+                    <h2 style="font-family: Ubuntu" class="ml-3 mr-3 text-xl">
+                        Finalis OSN Astronomi SMA 2022 Nasional
+                    </h2>
+                </div>
+                <div
+                    class="flex bg-white items-center rounded-lg m-2 duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <img
+                        src="assets/prestasi/logo-osn.png"
+                        alt="logo"
+                        class="w-20 h-20 object-contain my-4 mx-2"
+                    />
+                    <h2
+                        style="font-family: Ubuntu"
+                        class="ml-3 mr-3 text-xl my-3"
+                    >
+                        Juara 1 OSN-P Astronomi SMA 2022 Sumatera Selatan
+                    </h2>
+                </div>
+                <div
+                    class="flex bg-white items-center rounded-lg m-2 duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <img
+                        src="assets/prestasi/logo-osn.png"
+                        alt="logo"
+                        class="w-20 h-20 object-contain my-4 mx-2"
+                    />
+                    <h2
+                        style="font-family: Ubuntu"
+                        class="ml-3 mr-3 text-xl my-3"
+                    >
+                        Juara 1 OSN-K Astronomi SMA 2022 Kota Palembang
+                    </h2>
+                </div>
+                <div
+                    class="flex bg-white items-center rounded-lg m-2 duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <img
+                        src="assets/prestasi/logo-osn.png"
+                        alt="logo"
+                        class="w-20 h-20 object-contain my-4 mx-2"
+                    />
+                    <h2
+                        style="font-family: Ubuntu"
+                        class="ml-3 mr-3 text-xl my-3"
+                    >
+                        Finalis KSN Astronomi SMA 2021 Nasional
+                    </h2>
+                </div>
+                <div
+                    class="flex bg-white items-center rounded-lg m-2 duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <img
+                        src="assets/prestasi/logo-opsi.png"
+                        alt="logo"
+                        class="w-20 h-20 object-contain my-4 mx-2"
+                    />
+                    <h2
+                        style="font-family: Ubuntu"
+                        class="ml-3 mr-3 text-xl my-3"
+                    >
+                        Medali Perunggu OPSI Ilmu Pengetahuan Sosial,
+                        Kemanusiaan dan Seni SMP 2018 Nasional
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobi -->
+        <div id="hobi" class="mx-5 mt-10 lg:container lg:mx-auto">
+            <h1
+                style="font-family: Ubuntu"
+                class="text-5xl md:text-6xl lg:text-7xl flex justify-center"
+            >
+                Hobi
+            </h1>
+            <div
+                class="columns-2 lg:columns-3 mt-10 mx-5 opacity-90 duration-300 hover:opacity-100"
+            >
+                <img
+                    src="assets/hobi/jogging.jpg"
+                    alt="hobi"
+                    loading="lazy"
+                    class="w-full aspect-square rounded-lg m-3"
+                />
+                <img
+                    src="assets/hobi/game.jpg"
+                    alt="hobi"
+                    loading="lazy"
+                    class="w-full aspect-video rounded-lg m-3"
+                />
+                <img
+                    src="assets/hobi/hobi-4.jpeg"
+                    alt="hobi"
+                    loading="lazy"
+                    class="w-full aspect-[16/10] rounded-lg m-3"
+                />
+                <img
+                    src="assets/hobi/hobi-2.jpeg"
+                    alt="hobi"
+                    loading="lazy"
+                    class="w-full aspect-square rounded-lg m-3"
+                />
+                <img
+                    src="assets/hobi/hobi-3.jpeg"
+                    alt="hobi"
+                    loading="lazy"
+                    class="w-full aspect-square rounded-lg m-3"
+                />
+                <img
+                    src="assets/hobi/hobi-5.jpeg"
+                    alt="hobi"
+                    loading="lazy"
+                    class="w-full aspect-[16/10] rounded-lg m-3"
+                />
+            </div>
+        </div>
+
+        <!-- film -->
+        <div id="film" class="mt-10 lg:container mx-auto">
+            <h1
+                style="font-family: Ubuntu"
+                class="text-5xl md:text-6xl lg:text-7xl flex justify-center"
+            >
+                Film favorit
+            </h1>
+            <div
+                class="flex justify-around flex-wrap max-w-[1200px] mt-5 mx-auto"
+            >
+                <div
+                    class="m-3 bg-white p-3 max-w-[480px] md:max-w-[370px] rounded-xl duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <div class="p-3">
+                        <img
+                            src="assets/film/poster-john.jpg"
+                            alt="poster"
+                            class="w-full rounded-lg"
+                        />
+                        <h2
+                            style="font-family: Ubuntu"
+                            class="mt-3 font-bold text-xl text-center"
+                        >
+                            John Wick Series
+                        </h2>
+                        <p
+                            style="font-family: Comfortaa"
+                            class="mt-7 text-center"
+                        >
+                            "Menurut saya ini adalah film <i>action</i> terbaik
+                            yang pernah saya tonton, mulai dari aspek
+                            <i>fighting</i>, brutal dan kecerdasannya dalam
+                            mengeksekusi lawan"
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="m-3 bg-white p-3 max-w-[480px] md:max-w-[370px] rounded-xl duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <div class="p-3">
+                        <img
+                            src="assets/film/poster-raid.jpg"
+                            alt="poster"
+                            class="w-full rounded-lg"
+                        />
+                        <h2
+                            style="font-family: Ubuntu"
+                            class="mt-3 font-bold text-xl text-center"
+                        >
+                            The Raid Series
+                        </h2>
+                        <p
+                            style="font-family: Comfortaa"
+                            class="mt-7 text-center"
+                        >
+                            "Film dengan cerita pemberantasan kejahatan terbaik
+                            menurut saya, mulai dari pengorbanan rekan setim,
+                            kakak dan juga orang lain yang dia tidak tau kalau
+                            itu juga merupakan rekan setim, semua cerita disini
+                            sangat bagus"
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="m-3 bg-white p-3 max-w-[480px] md:max-w-[370px] rounded-xl duration-300 hover:shadow-lg hover:shadow-gray-800 border-2"
+                >
+                    <div class="p-3">
+                        <img
+                            src="assets/film/poster-fabricated.jpg"
+                            alt="poster"
+                            class="w-full rounded-lg"
+                        />
+                        <h2
+                            style="font-family: Ubuntu"
+                            class="mt-3 font-bold text-xl text-center"
+                        >
+                            Fabricated City
+                        </h2>
+                        <p
+                            style="font-family: Comfortaa"
+                            class="mt-7 text-center"
+                        >
+                            "Masalah <i>survival</i> dan kecerdasan tokoh utama
+                            film ini salah satu yang terbaik menurut saya bahkan
+                            antagonis pada film ini sangat cerdas. ditambah pada
+                            film ini dibumbui dengan elemen <i>hacker</i>"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- kontak -->
+        <div class="mt-10">
+            <div style="font-family: Ubuntu">
+                <h1
+                    class="text-3xl md:text-4xl lg:text-5xl flex justify-center"
+                >
+                    Kontak
+                </h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl flex justify-center">
+                    Saya
+                </h2>
+            </div>
+
+            <form id="form-kontak" class="max-w-sm mx-auto mt-10">
+                <div style="font-family: Ubuntu" class="mb-5 mx-3">
+                    <label for="email" class="block mb-2 text-md"
+                        >Email
+                        <span class="text-red-800 text-sm">*</span></label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="border text-sm rounded-lg block w-full p-2.5 border-gray-800"
+                        placeholder="daffa1mubarok@gmail.com"
+                    />
+                    <h1
+                        id="email-error"
+                        class="hidden text-red-800 text-md mt-2"
+                    >
+                        *Mohon diisi
+                    </h1>
+                </div>
+                <div style="font-family: Ubuntu" class="mb-5 mx-3">
+                    <label for="nama" class="block mb-2 text-md"
+                        >Nama <span class="text-red-800 text-sm">*</span></label
+                    >
+                    <input
+                        type="text"
+                        id="name"
+                        name="nama"
+                        placeholder="Sayyid Daffa ' Al Mubarok"
+                        class="border text-sm rounded-lg block w-full p-2.5 border-gray-800"
+                    />
+                    <h1
+                        id="name-error"
+                        class="hidden text-red-800 text-md mt-2"
+                    >
+                        *Mohon diisi
+                    </h1>
+                </div>
+                <div style="font-family: Ubuntu" class="mx-3">
+                    <label for="nama" class="block mb-2 text-md"
+                        >Pesan
+                        <span class="text-red-800 text-sm">*</span></label
+                    >
+                    <div class="items-center h-53">
+                        <textarea
+                            name="pesan"
+                            id="pesan"
+                            rows="3"
+                            placeholder="Hallo!"
+                            class="border text-sm rounded-lg block w-full p-2.5 border-gray-800 box-border"
+                        ></textarea>
+                        <h1
+                            id="pesan-error"
+                            class="hidden text-red-800 text-md mt-2"
+                        >
+                            *Mohon diisi
+                        </h1>
+                    </div>
+                </div>
+                <div style="font-family: Ubuntu" class="mt-8 mx-3">
+                    <div class="flex flex-col items-center md:items-start">
+                        <button
+                            id="submit"
+                            type="submit"
+                            class="text-center rounded-lg border-2 p-2.5 w-[130px] border-gray-800 font-bold text-xl duration-300 hover:shadow-lg hover:shadow-gray-800"
+                            onclick="buttonClick()"
+                        >
+                            Kirim
+                        </button>
+                        <div id="loading" class="hidden">
+                            <button
+                                class="inline-flex text-center items-center justify-center rounded-lg border-2 p-2.5 w-[170px] border-gray-800 font-bold text-xl duration-300 hover:shadow-lg hover:shadow-gray-800"
+                            >
+                                <svg
+                                    aria-hidden="true"
+                                    role="status"
+                                    class="inline w-4 h-4 me-3 text-gray-200 animate-spin dark:text-gray-600"
+                                    viewBox="0 0 100 101"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                        fill="currentColor"
+                                    />
+                                    <path
+                                        d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                        fill="#1C64F2"
+                                    />
+                                </svg>
+                                Loading...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="my-10">
+            <h1
+                style="font-family: Ubuntu"
+                class="text-2xl md:text-3xl lg:text-4xl flex justify-center"
+            >
+                Teks Tersimpan
+            </h1>
+
+            <div class="mt-10">
+                <div class="max-w-md mx-auto">
+                    <div class="mx-3 mb-5">
+                        <label for="tersimpan-1" class="block mb-2 text-md"
+                            >Teks Area
+                        </label>
+                        <textarea
+                            name="tersimpan-1"
+                            id="tersimpan-1"
+                            placeholder="Teks Area"
+                            rows="3"
+                            class="border text-sm rounded-lg block w-full p-2.5 border-gray-800"
+                        ></textarea>
+                    </div>
+                    <div class="mx-3 mb-5">
+                        <label for="tersimpan-1" class="block mb-2 text-md"
+                            >Teks
+                        </label>
+                        <input
+                            type="text"
+                            name="tersimpan-2"
+                            id="tersimpan-2"
+                            placeholder="Teks"
+                            class="border text-sm rounded-lg block w-full p-2.5 border-gray-800"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="scroll-to-top">
+            <button
+                onclick="scrollToTop()"
+                class="scroll-to-top fixed bottom-4 right-4 bg-gray-800 text-white rounded-full transition duration-300 hover:bg-gray-700 hover:text-gray-200"
+            >
+                <img
+                    src="https://media.geeksforgeeks.org/wp-content/uploads/20240227155250/up.png"
+                    class="w-8 h-8 rounded-full bg-white"
+                    alt=""
+                />
+            </button>
+        </div>
+
+        <script>
+            const navLinks = document.querySelector(".nav-links");
+            function onToggleMenu(e) {
+                e.name = e.name === "menu" ? "close" : "menu";
+                navLinks.classList.toggle("top-[6%]");
+            }
+
+            function validForm() {
+                flag = true;
+                const email = document.getElementById("email").value;
+                const nama = document.getElementById("name").value;
+                const pesan = document.getElementById("pesan").value;
+
+                if (email == "") {
+                    document.getElementById("email-error").style.display =
+                        "block";
+                    flag = false;
+                } else if (email.indexOf("@") == -1) {
+                    document.getElementById("email-error").style.display =
+                        "block";
+                    document.getElementById("email-error").innerHTML =
+                        "*Bukan format e-mail";
+                    flag = false;
+                } else {
+                    document.getElementById("email-error").style.display =
+                        "none";
+                }
+
+                if (nama.trim() == "") {
+                    document.getElementById("name-error").style.display =
+                        "block";
+                    flag = false;
+                } else {
+                    document.getElementById("name-error").style.display =
+                        "none";
+                }
+
+                if (pesan.trim() == "") {
+                    document.getElementById("pesan-error").style.display =
+                        "block";
+                    flag = false;
+                } else {
+                    document.getElementById("pesan-error").style.display =
+                        "none";
+                }
+
+                if (!flag) {
+                    return false;
+                }
+
+                return true;
+            }
+
+            function buttonClick() {
+                const loading = document.getElementById("loading");
+                const submit = document.getElementById("submit");
+                valid = validForm();
+                if (valid) {
+                    submit.style.display = "none";
+                    loading.style.display = "block";
+                }
+            }
+
+            const form = document.getElementById("form-kontak");
+
+            form.addEventListener("submit", async (event) => {
+                event.preventDefault();
+
+                const preProcess = new FormData(form);
+                const postProcess = new URLSearchParams(preProcess);
+
+                console.log([...postProcess]);
+
+                valid = validForm();
+                if (valid) {
+                    try {
+                        const response = await fetch(
+                            "https://debug.nafkhanzam.com/web-programming-e03",
+                            {
+                                method: "POST",
+                                mode: "no-cors",
+                                body: postProcess,
+                            }
+                        );
+                        const data = await response.text();
+                        const loading = document.getElementById("loading");
+                        const submit = document.getElementById("submit");
+                        console.log(data);
+                        loading.style.display = "none";
+                        submit.style.display = "block";
+                        submit.innerHTML = "Terkirim";
+
+                        await new Promise((resolve) =>
+                            setTimeout(resolve, 3500)
+                        );
+
+                        submit.innerHTML = "Kirim";
+                    } catch (err) {
+                        console.log(err);
+                    }
+                }
+            });
+
+            function saveInput() {
+                const textAreaValue =
+                    document.getElementById("tersimpan-1").value;
+                const textValue = document.getElementById("tersimpan-2").value;
+
+                localStorage.setItem("tempTextArea", textAreaValue);
+                localStorage.setItem("tempText", textValue);
+            }
+
+            function loadInput() {
+                const savedTextArea = localStorage.getItem("tempTextArea");
+                const savedText = localStorage.getItem("tempText");
+
+                if (savedTextArea !== null) {
+                    document.getElementById("tersimpan-1").value =
+                        savedTextArea;
+                }
+
+                if (savedText !== null) {
+                    document.getElementById("tersimpan-2").value = savedText;
+                }
+            }
+
+            window.onload = loadInput;
+
+            document
+                .getElementById("tersimpan-1")
+                .addEventListener("input", saveInput);
+            document
+                .getElementById("tersimpan-2")
+                .addEventListener("input", saveInput);
+
+            const scrollToTopButton = document.getElementById("scroll-to-top");
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 80) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            });
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            }
+        </script>
+    </body>
+</html>
